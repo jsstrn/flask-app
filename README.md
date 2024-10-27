@@ -11,6 +11,8 @@ Check that you have all the necessary tools and install them if you don't.
 - Flask
 - Git
 
+Verify that you have them installed.
+
 ```sh
 python3 --version
 pip3 --version
@@ -18,9 +20,9 @@ flask --version
 git --version
 ```
 
-## Setup virtual environment
+## Setup a virtual environment
 
-In your project directory, we want to first create a `.venv` directory and then activate it. This should be added to your `.gitignore` file so you don't check it in.
+In your project directory, we want to first create a `.venv` directory using [venv](https://docs.python.org/3/library/venv.html) and then activate it. This should be added to your `.gitignore` file so you don't check it in.
 
 When you clone the project you have to create a new `.venv` directory and every time you open the project in a new shell you have to activate it again.
 
@@ -52,14 +54,6 @@ Check that Python is called from within the `.venv` directory. You should be abl
 
 ```sh
 which python
-```
-
-### Install a specific version of Python
-
-Let's say you want to install Python version 3.9.
-
-```sh
-pip install python=3.9
 ```
 
 ## Install dependencies
