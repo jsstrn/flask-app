@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Flask App</title>
+</head>
+<body>
+    <h1>My First Flask App</h1>
+    <p>Welcome to my first Flask app</p>
+    <h2>Hit some routes</h2>
+    <p>Click the links below to navigate to other pages.</p>
+    <ul>
+        <li><a href="{{ url_for('routes.hello_world') }}">Hello World</a></li>
+        <li><a href="{{ url_for('routes.test_route') }}">Test Route</a></li>
+        <li><a href="{{ url_for('routes.say_hello', name='Jazeel') }}">Hello friends!</a></li>
+    </ul>
+</body>
+</html>
