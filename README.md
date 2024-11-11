@@ -75,3 +75,43 @@ To start the development server on port 8080.
 ```sh
 python app.py
 ```
+
+## Infrastructure
+
+We use AWS CDK to provision our infrastructure.
+
+Run the `cdk synth` command to check if everything is working correctly. This will generate a CloudFormation template based on the code in your stack and output it to the terminal.
+
+```sh
+cdk synth
+```
+
+To view the CloudFormation template for a given stack just provide the stack id.
+
+```sh
+cdk synth <your stack id>
+```
+
+Before deploying, run `cdk bootstrap` to set up resources that CDK requires (only needs to be done once).
+
+```sh
+cdk bootstrap
+```
+
+You should see a success message for your account id and region being bootstrapped.
+
+```sh
+✅  Environment aws://<your account id>/<your region> bootstrapped.
+```
+
+To deploy all stacks for the Singapore region.
+
+```sh
+cdk deploy --region ap-southeast-1
+```
+
+You can also deploy individual stacks only.
+
+```sh
+cdk deploy <your stack id> --region ap-southeast-1
+```
