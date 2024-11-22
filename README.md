@@ -107,7 +107,7 @@ You should see a success message for your account id and region being bootstrapp
 To deploy all stacks for the Singapore region.
 
 ```sh
-cdk deploy --region ap-southeast-1
+cdk deploy --all --region ap-southeast-1
 ```
 
 You can also deploy individual stacks only.
